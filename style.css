@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
+
+body{
+    font-family: "lato";
+    font-weight: 300px;
+    font-size: 16px;
+    color: #555;
+    
+    -webkit-font-smoothing:antialiasef;
+    -webkit-overflow-scrolling:touch;
+    
+ 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald";
+    font-weight: 300;
+    color:#333;
+}
+
+.centered{
+    text-align:center;
+}
+
+
+
+#headerwrap{
+    background : url(images/photo%20header1.jpg) no-repeat center top;
+    margin-top: -8px;
+    padding-top: 40px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height:500px;
+    width: 100%;    
+    background-size:100%;
+    
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    
+}
+
+#headerwrap h1{
+ margin-top:-5px;
+ color: white;
+ font-size: 70px;
+ font-weight: 300px;
+ letter-spacing: 3px; 
+}
+
+#headerwrap h2{
+    color:white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#headerwrap btn-outline-success{
+    padding: 5px;
+    padding-bottom: 5px;
+    
+}
+
+
+.card{
+    padding: 2px;
+    padding-top: 40px;
+    display:inline-flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+
+.col-sm{
+    padding-top: 3px;
+    margin: 3px;
+}
+
+#conacts{
+    background :url(images/photo-futter1.jpg) no-repeat center top ;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.card-deck{
+    padding-bottom: 10px;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.carousel slide{
+    width: 100%;
+    height: auto;
+}
+
+#info{
+    background-color:black;
+    max-width: 100%;
+    height: auto;
+}
+
+#info h3{
+    color: aliceblue;
+}
+#info h4{
+    color:aliceblue;
+}
+
+.btn btn-outline-info{
+margin-right: 10px;
+}
+
+
+.btn btn-link {
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
