@@ -53,8 +53,29 @@ button:hover{
  
 .top-nav{
     padding: 46px;
-    font-size: 13px;    
+    font-size: 13px;   
+    position: relative;
 }
+
+
+.top-nav-btn{
+background: none;
+border-bottom: none;
+height:25px;
+width: 25px;
+position: absolute;
+right: 50px;
+top:-80px;
+display: none;
+margin: 10px;
+}
+
+.top-nav-btn:hover{
+background: none;
+cursor: pointer;
+border-bottom: none;
+}
+
 
 .top-nav a {
     color: white;
@@ -359,3 +380,5 @@ margin-bottom:101px;
 .info img{
 text-align: center;
 } 
+
+

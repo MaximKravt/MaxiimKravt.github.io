@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="media.less">
 
     <title>Hello, world!</title>
   </head>
@@ -36,6 +37,9 @@
                  </div>
              </div>
              <div class="col-md-auto">
+             <button class="top-nav-btn">
+             <img src="images/if_menu-alt_134216.png">
+             </button>
                  <ul class="top-nav_menu">
                      <li><a href="#">Home</a></li>
                        <li><a href="#">Service</a></li>
@@ -346,6 +350,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolores ut aliqui
     $(".main-slider-blocks").slick({
         arrows: true,
         dots: false ,
+       responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll:1,
+        dots:false
+      }
+    },
+   
+  ],
         slidesToShow: 4,
         slidesToScroll: 2,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/if_prev_308956.png"></button> style: background="red"',
@@ -353,6 +368,28 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolores ut aliqui
     });
         
   </script>
+  
+  
+      <script>
+      
+   $(document).ready(function() {
+   var menuBtn = $('.top-nav-btn');
+   var menu =$('.top-nav_menu');
+
+    menuBtn.on('click' , function(event){
+        
+    event.preventDefault();
+    menu.toggleClass('top-nav_menu__active');
+        
+    }); 
+       
+       
+   });
+      
+      
+      
+      
+      </script>
   
   
 
