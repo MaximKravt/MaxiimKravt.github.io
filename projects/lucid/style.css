@@ -1,0 +1,395 @@
+body {
+  margin: 0;
+  font-family: 'Myriad Pro', sans-serif; 
+  font-size: 14px;
+  color: #d3d3d3;
+  
+
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h5{
+  margin: 0;
+}
+
+p {
+margin: 0 0 10px;
+}
+
+
+/*header===========*/
+
+.header{
+  width: 100%;
+  height: 100px;
+  padding: 35px 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+/*CONTAINER===========*/
+
+.container {
+ width: 100%;
+ max-width: 1170px;
+ margin: 0 auto;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/*NAV===========*/
+
+.nav {
+font-size: 13px;
+font-weight: 700;
+}
+.nav__link{
+  margin-left: 50px;
+  color:#ffff;
+  text-decoration: none;
+  opacity: 0.75;
+
+  transition: opacity .1s linear;
+
+}
+
+
+.nav__link:first-child {
+margin-left: 0;
+}
+
+.nav__link:hover {
+  opacity: 1;
+  
+  
+}
+
+/*INTRO===========*/
+.intro { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 640px;
+  padding-top: 100px;
+  background: #202128 url("images/photo_bg.jpg");
+  background-size: 100%;
+ 
+}
+
+.intro__title{
+  font-size: 48px;
+  font-family: 'myriad-pro-condensed', sans-serif;
+  margin:0;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 71px;
+  
+}
+
+.intro__inner{
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro__subtitle{
+  font-size: 18px;
+  font-family: 'myriad-pro-condensed', sans-serif;
+  color:#6b6b6d;
+  font-weight: 400;
+}
+
+
+
+/*subscribe===========*/
+
+.subscribe{
+display: inline-block;
+vertical-align: top;
+padding: 12px 33px;
+text-align: left;
+margin-right: 10px;
+font-size: 14px;
+font-family: 'myriad-pro-condensed';
+font-weight: 400;
+color: #d2d2d3;
+background-color: transparent;
+text-decoration: none;
+border: 1px solid;
+border-color: #4e4e53;
+}
+
+
+.btn {
+
+display: inline-block;
+vertical-align: top;
+font-style: 13px;
+color:#fff;
+font-weight: 600;
+text-transform: uppercase;
+text-decoration: none;
+padding: 14px 30px;
+
+}
+
+ .btn--blue {
+  background-color:#008ed6;
+}
+
+/*product===========*/
+
+.product {
+  
+display: flex;
+margin: 100px 0 ;
+ 
+
+}
+
+
+
+.product__item{
+  width: 22.2222%;
+  padding: 0 30px;
+  text-align: center;
+
+
+}
+
+
+
+.product__icons {
+
+margin-bottom: 20px;
+/*
+border: 2px solid;
+border-color: #ededed;
+border-radius: 50%;
+padding: 10%;
+*/
+
+}
+
+.product_title{
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+
+
+.product__text{
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+
+/*hr===========*/
+
+
+
+hr{
+
+  border: none; /* Убираем границу */
+    background-color:#ededed; /* Цвет линии */
+    height: 2px; /* Толщина линии */
+
+}
+
+
+/*device__item*/
+
+.device__item{
+
+display: flex;
+}
+
+
+
+.device__text h2{
+
+  font-size: 20px;
+  font-family: 'myriad-pro-condensed';
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 36px;
+
+}
+
+
+
+.device__text h4 {
+
+
+padding: 10px;
+color:#d3d3d3;
+font-size: 18px;
+font-weight: 200;
+width: 350px;
+
+}
+
+.device__text li{
+
+list-style-type: none;
+padding-bottom: 4px;
+padding-top: 20px;
+
+
+
+}
+
+.device{
+
+  padding-top: 20px;
+  
+  
+}
+
+
+
+/*customize*/
+
+.customize{
+  justify-content: space-between;
+  display: flex;
+  background-color:#f2f2f2;
+}
+
+
+.customize_icons{
+
+
+  text-align: right;
+  display: flex;
+  width: 570px;
+  margin-top: 50px;
+  margin-right: 50px;
+
+}
+
+
+
+.customize__text{
+
+width: 400px;
+text-align: left;
+margin-top: 150px;
+margin-left: 70px;
+
+}
+
+
+
+.customize__text h1{
+
+
+color: #1a1a1a;
+font-size: 31px;
+font-weight: 600;
+}
+
+
+
+.customize__text h4{
+color: #6b6b6d;
+font-size: 14px;
+font-weight: 300;
+padding-top: 30px;
+}
+
+
+/*main__slider*/
+
+.main__slider{
+
+  background-image:url(images/Prostokąt\ 4.jpg);
+  height:600px;
+  
+}
+
+
+.slider_text{
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+.slider_text h5 {
+  color: #1285c5;
+}
+
+
+.slider_text h1{
+
+padding-top: 20px;
+
+}
+
+
+.your-class{
+justify-content: space-between;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 100px;
+text-align: left;
+padding-bottom: 100px;
+font-size: 18px;
+}
+
+.your-class img{
+
+  width: 40px;
+  margin-top: 30px;
+}
+
+
+
+.your-class h5{
+width: 300px;
+
+}
+
+
+.your-class p{
+margin: 50px;
+margin-top: -30px;
+  
+  }
+
+
+  .sclick-dots li button:before,
+  .slick-dots li.slick-active:before {
+color: #ffff;
+font-size: 10px;
+}
+
+
+  .slick-prev:before{
+  display: none;
+  }
+
+  
+  .slick-next:before{
+    display: none;
+    }
